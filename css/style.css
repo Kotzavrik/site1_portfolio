@@ -1,0 +1,552 @@
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+body,
+header,
+section {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  cursor: default;
+
+}
+
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container_internal {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: #00A4E5;
+}
+
+/* шапка */
+.container_header {
+  background-image: url(../img/bg.png);
+  background-size: cover;
+
+}
+
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 320px;
+  padding-top: 40px;
+}
+
+.h1_header {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.p_head {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 320px;
+}
+
+.p2_header {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-bottom: 70px;
+}
+
+.container_navigation-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  margin: 24px 0;
+}
+
+@media screen and (max-width: 950px) {
+  .navigation {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+.container_navigation-flex ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_navigation-flex li {
+  list-style: none;
+  margin-right: 40px;
+  font-family: sans-serif;
+  color: #48555B;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container_navigation-flex li:hover {
+  color: #00A4E5;
+}
+
+.container_navigation-flex li:last-child {
+  margin-right: 0;
+}
+
+header .container {
+  border-bottom: grey 2px solid;
+}
+
+/* о нас */
+.about {
+  margin-bottom: 120px;
+}
+
+.about_h2 {
+  color: #48555B;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.306px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-top: 60px;
+}
+
+.line_about {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.about_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  flex-wrap: wrap;
+}
+
+.abot_text {
+  max-width: 406px;
+
+}
+
+.h3_about {
+  color: #48555B;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.188px;
+  margin-bottom: 30px;
+  line-height: 35px;
+}
+
+.h3_about span {
+  color: #00A4E5;
+}
+
+.p_about {
+  color: #48555B;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.188px;
+  line-height: 22px;
+}
+
+.about_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  .about_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 315px) {
+  .about_grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+}
+
+@media screen and (max-width: 865px) {
+  .about_flex {
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .p_about {
+    margin-bottom: 20px;
+  }
+
+  .about_grid {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+@media screen and (max-width:975px) {
+  .about {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .services {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
+
+/* сервис */
+.services {
+  padding-bottom: 115px;
+}
+
+.services_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.h3_services {
+  color: #48555B;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.306px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.p_services {
+  color: #48555B;
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  max-width: 406px;
+
+}
+
+.p_button_services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* кнопка */
+.button {
+  width: 150px;
+  height: 40px;
+  background: #00A4E5;
+  border: none;
+  color: #FFF;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #008cc4;
+
+}
+
+/* сервис (продолжение) */
+.button_services {
+  margin-left: 50px;
+}
+
+@media screen and (max-width:625px) {
+  .button_services {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .services_flex {
+    justify-content: center;
+  }
+
+  .p_button_services {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.services_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+
+@media screen and (max-width:865px) {
+  .services_grid {
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+  .h3_and_line {
+    padding-right: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width:565px) {
+  .services_grid {
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+
+  .h3_and_line {
+    padding-right: 0;
+  }
+}
+
+.services_item {
+  border: #7b7e7f 1px solid;
+  padding: 40px 22.5px;
+  min-width: 250px;
+}
+
+
+.h3_services_item {
+  color: #48555B;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.p_services_item {
+  color: #48555B;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  max-width: 406px;
+}
+
+/* контакт */
+.contact {
+  background-image: url(../img/1614571275_30-p-gorod-na-belom-fone-35\ \(1\).png);
+  background-size: cover;
+}
+
+.contact_flex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+.h2_contact {
+  color: #48555B;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-weight: 30px;
+  letter-spacing: 0.15px;
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+
+.button_contact {
+  margin-bottom: 230px;
+}
+
+/* форма */
+.newsletter {
+  background-color: #171819;
+}
+
+.newsletter_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h2_newsletter {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #FFF;
+}
+
+.forma {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.forma_e-mail {
+  height: 40px;
+  width: 250px;
+  border: none;
+}
+
+[placeholder] {
+  padding-left: 20px;
+}
+
+/* футер */
+.footer_oglaw {
+  background-color: #141A20;
+  padding: 40px 0;
+}
+
+.company_flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rectangle1 {
+  max-width: 250px;
+}
+
+.rectangle1 p {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.rectangle1 h5 {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.rectangle1 img{
+  margin-bottom: 20px;
+}
+
+.rectangle2 {
+  width: 265px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer li {
+  list-style: none;
+  color: #FFF;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.85px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.footer li:hover {
+  color: #c8c8c8;
+  font-weight: 200;
+}
+
+
+.rectangle3 {
+  max-width: 140px;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+.rectangle3 h5{
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.rectangle3 p{
+  margin-bottom: 25px;
+}
+.rectangle3 p:last-child{
+  margin-bottom: 0;
+}
+.rectangle4 {
+  width: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_copyright{
+  background-color: #171819;
+  padding: 25px 0;
+  color: #FFF;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 13px;
+}
