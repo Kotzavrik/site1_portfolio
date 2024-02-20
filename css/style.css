@@ -388,7 +388,7 @@ header .container {
 }
 
 /* контакт */
-.contact {
+.contact_bgi {
   background-image: url(../img/1614571275_30-p-gorod-na-belom-fone-35\ \(1\).png);
   background-size: cover;
 }
@@ -415,7 +415,7 @@ header .container {
 }
 
 /* форма */
-.newsletter {
+.newsletter_bgc {
   background-color: #171819;
 }
 
